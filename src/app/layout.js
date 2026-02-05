@@ -1,4 +1,4 @@
-
+"use client"
 import "./globals.css";
 import MobileSidebar from "../components/MobileSidebar"; // mobile sidebar component (client)
 import { FaInstagram, FaYoutube } from "react-icons/fa";
