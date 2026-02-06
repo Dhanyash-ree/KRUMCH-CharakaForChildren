@@ -18,7 +18,7 @@ export default function Header() {
         <div className="logo-wrap">
           <img src="/logo.jpg" alt="logo" className="logo-img" />
           <div className="site-title">
-            <div className="title-main">KRUMCH</div>
+            <div className="title-main">KRAMCH</div>
             <div className="title-sub">
               Kundapura Rural Ayurveda Medical College
             </div>
