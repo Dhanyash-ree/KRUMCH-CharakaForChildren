@@ -751,6 +751,9 @@ main{max-width:1200px;margin:28px auto;padding:0 18px}
 
   /* make header height slightly larger for touch */
   .site-nav { padding: 20px 16px; }
+  .mobile-close {position: relative;
+  top: -10px;     
+  right: -6px;}
 }
 /* =========================
    MOBILE: full-width header + body fix
@@ -1516,4 +1519,94 @@ main{max-width:1200px;margin:28px auto;padding:0 18px}
     margin-left: 0 !important;
   }
 
+}
+/* =========================
+   MOBILE SIDEBAR – SOCIAL FIX
+   ========================= */
+
+.mobile-sidebar-footer {
+  margin-top: 20px !important;   /* move section upward */
+  padding-bottom: 16px;
+}
+
+.mobile-social-row {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+
+/* icon buttons */
+.mobile-social-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.05),
+    rgba(255,255,255,0.02)
+  );
+
+  color: var(--saffron);
+  box-shadow: 0 8px 26px rgba(0,0,0,0.45);
+  text-decoration: none;
+}
+
+/* icon size */
+.mobile-social-icon svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Extra safety for short-height phones (Redmi etc.) */
+@media (max-height: 700px) {
+  .mobile-sidebar {
+    padding-bottom: 80px !important;
+  }
+
+  .mobile-sidebar-footer {
+    margin-top: 12px !important;
+  }
+}
+/* CONTACT — full width on mobile */
+@media (max-width: 600px) {
+  #contact > div {
+    flex-direction: column !important;
+  }
+
+  #contact > div > div {
+    width: 100% !important;
+    min-width: 100% !important;
+  }
+
+  .contact-form {
+    width: 100% !important;
+  }
+}
+
+/* FEATURE CARD — smaller text on mobile */
+@media (max-width: 600px) {
+  .feature-title {
+    font-size: 19px !important;
+  }
+
+  .feature-desc {
+    font-size: 13px !important;
+    line-height: 1.55 !important;
+  }
+
+  .stat-num {
+    font-size: 22px !important;
+  }
+
+  .stat-label {
+    font-size: 12px !important;
+  }
+
+  .stat-col .big {
+    font-size: 28px !important;
+  }
 }

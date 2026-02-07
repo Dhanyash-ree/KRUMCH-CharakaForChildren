@@ -2,6 +2,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { FaInstagram, FaYoutube } from "react-icons/fa";
+
 
 export default function MobileSidebar({ links = [] }) {
   const [open, setOpen] = useState(false);
@@ -80,13 +82,34 @@ export default function MobileSidebar({ links = [] }) {
               ))}
             </nav>
 
-            <div className="mobile-sidebar-footer">
-              <p style={{ margin: 0, fontSize: 13, opacity: 0.9 }}>Follow</p>
-              <div style={{ display: "flex", gap: 10, marginTop: 8 }}>
-                <a className="social-small" href="https://www.instagram.com/your_instagram_here" target="_blank" rel="noreferrer">IG</a>
-                <a className="social-small" href="https://www.youtube.com/your_channel_here" target="_blank" rel="noreferrer">YT</a>
-              </div>
-            </div>
+          <div className="mobile-sidebar-footer">
+  <p style={{ color: "#ffdca8", fontWeight: 700, marginBottom: 8 }}>
+    Follow Us
+  </p>
+
+  <div className="mobile-social-row">
+    <a
+      href="https://www.instagram.com/kundapura_rural_ayurveda"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mobile-social-icon"
+      aria-label="Instagram"
+    >
+      <FaInstagram />
+    </a>
+
+    <a
+      href="https://youtube.com/@kundapuraruralayurveda"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mobile-social-icon"
+      aria-label="YouTube"
+    >
+      <FaYoutube />
+    </a>
+  </div>
+</div>
+
           </aside>
         </div>
       )}
