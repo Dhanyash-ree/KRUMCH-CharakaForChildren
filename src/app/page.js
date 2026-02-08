@@ -134,7 +134,7 @@ export default function Home() {
         </div>
 
         <div className="stat-col">
-          <div className="stat-num big">100+</div>
+          <div className="stat-num big">1000+</div>
           <div className="stat-label">Students Reached</div>
         </div>
 

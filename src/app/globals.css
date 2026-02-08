@@ -752,7 +752,7 @@ main{max-width:1200px;margin:28px auto;padding:0 18px}
   /* make header height slightly larger for touch */
   .site-nav { padding: 20px 16px; }
   .mobile-close {position: relative;
-  top: -10px;     
+  top: -11px;     
   right: -6px;}
 }
 /* =========================
